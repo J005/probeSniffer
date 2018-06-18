@@ -233,7 +233,7 @@ def packetHandler(pkt):
                     if saveDuplicates:
                         debug("saveDuplicates on")
                         debug("saving to sql")
-                        saveToMYSQL(mac_address, vendor, ssid, rssi_val)
+                        saveToMYSQL(mac_address, vendor, ssid, rssi_val, bssid)
                         debug("saved to sql")
                     if showDuplicates:
                         debug("duplicate")
